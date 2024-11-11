@@ -133,7 +133,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         data = resp.get_json()
         self.assertEqual(data["name"], account.name)
-    
+
     def test_update_account(self):
         """It should Update an existing Account"""
         # create an Account to update
